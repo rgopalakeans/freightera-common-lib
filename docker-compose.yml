@@ -1,0 +1,9 @@
+version: '3.4'
+services:
+  freightera-common-lib:
+    container_name: 'freightera-common-lib'
+    build:
+      context: ./
+    tty: true
+    volumes:
+      - .:/var/www/html

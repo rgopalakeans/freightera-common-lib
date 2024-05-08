@@ -1,0 +1,29 @@
+{
+  "name": "freightera/freightera-common-lib",
+  "description": "Freightera Common Library",
+  "type": "library",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": ">=7.2",
+    "ext-curl": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.5"
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  },
+  "autoload": {
+    "psr-4": {
+      "Freightera\\Common\\": "src/lib"
+    }
+  },
+  "autoload-dev": {
+    "classmap": [
+      "src/tests"
+    ]
+  }
+}
